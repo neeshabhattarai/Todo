@@ -6,7 +6,9 @@ using TodoApi.Infastructure.Persistency;
 using Swashbuckle.AspNetCore;
 using Microsoft.AspNetCore.Identity;
 using TodoApi.Domain.Entities;
+using TodoApi.Domain.Repository;
 using TodoApi.Infastructure.AuthorizationRequirement;
+using TodoApi.Infastructure.Repository;
 using TodoApi.Infastructure.Service;
 
 namespace TodoApi.Infastructure.Extensions;
@@ -23,6 +25,7 @@ public static class ServiceCollectionExtensions
         collection.AddEndpointsApiExplorer();
         collection.AddScoped<IAuthorizationHandler, AgeCheckerHandler>();
         collection.AddScoped<IAuthorizationHandler,EmailCheckerHandler>();
+        collection.AddScoped<ITask, TaskRepository>();
         collection.AddAuthorizationBuilder()
             .AddPolicy("CheckAge", builder => builder.AddRequirements(new AgeChecker(22)))
             .AddPolicy("CheckEmail", builder => builder.AddRequirements(new EmailChecker("hello12@gmail.com")));

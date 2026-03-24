@@ -20,6 +20,7 @@ public static class ServiceCollectionExtensions
         });
         services.AddValidatorsFromAssembly(typeof(ServiceCollectionExtensions).Assembly)
             .AddFluentValidationAutoValidation();
+        services.AddAutoMapper(typeof(ServiceCollectionExtensions).Assembly);
 
     }
 }
