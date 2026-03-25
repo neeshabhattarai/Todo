@@ -8,7 +8,7 @@ public class TaskMapper:Profile
 {
     public TaskMapper()
     {
-        CreateMap<CreateTask,TaskDTO>().ReverseMap();
+        CreateMap<CreateTask,Tasks>().ReverseMap();
         CreateMap<Tasks,TaskDTO>().ReverseMap();
         
     }

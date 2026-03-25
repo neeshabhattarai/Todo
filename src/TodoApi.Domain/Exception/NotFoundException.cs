@@ -1,6 +1,5 @@
 namespace TodoApi.Domain.Exception;
 
-public class NotFoundException:System.Exception
+public class NotFoundException(string identifier,string id):System.Exception
 {
-    
 }

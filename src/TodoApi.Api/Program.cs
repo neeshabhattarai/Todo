@@ -5,6 +5,7 @@ using Serilog;
 using TodoApi.Applicaiton.Extensions;
 using TodoApi.Domain.Entities;
 using TodoApi.Infastructure.Extensions;
+using TodoApi.middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -43,6 +44,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+// app.UseMiddleware<GloballyExceptionHandler>();
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
