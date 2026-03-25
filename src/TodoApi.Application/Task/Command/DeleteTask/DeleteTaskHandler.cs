@@ -1,4 +1,5 @@
 using MediatR;
+using TodoApi.Domain.Exception;
 using TodoApi.Domain.Repository;
 
 namespace TodoApi.Application.Task.Command.DeleteTask;
@@ -10,7 +11,8 @@ public class DeleteTaskHandler(ITask taskRepo):IRequestHandler<DeleteTaskCommand
         var task=await taskRepo.GetTaskById(request.TaskId);
         if (task == null)
         {
-            
+            throw new NotFoundException(nameof(Task), request.TaskId.ToString());
         }
+        await taskRepo.DeleteTask(task);
     }
 }
