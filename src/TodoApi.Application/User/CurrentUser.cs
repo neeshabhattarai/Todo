@@ -1,5 +1,6 @@
 namespace TodoApi.Application.User;
 
-public record CurrentUser(string Email,string Username, string Role)
+public record CurrentUser(string Id,string Email,string Username, string Role)
 {
+    
 }

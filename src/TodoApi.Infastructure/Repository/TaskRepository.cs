@@ -20,7 +20,7 @@ public class TaskRepository(TodoApplicationDbContext context):ITask
     public async Task<(List<Tasks>,int)> GetAllTask(string? searchParams, int pageNumber, int
         pageSize,string? orderBy,string? sortDirection)
     {
-        var list = context.Tasks.Where(x=>searchParams==null || x.Description.Contains(searchParams) || x.Name.Contains(searchParams));
+        var list = context.Tasks.Include("User").Where(x=>searchParams==null || x.Description.Contains(searchParams) || x.Name.Contains(searchParams));
         
         list = list.Skip((pageNumber - 1) * pageSize).Take(pageSize);
         var totalCount =await list.CountAsync();
@@ -39,7 +39,7 @@ public class TaskRepository(TodoApplicationDbContext context):ITask
 
     public async Task<Tasks> GetTaskById(int taskId)
     {
-       var task= await context.Tasks.FindAsync(taskId);
+       var task= await context.Tasks.Include("User").FirstAsync(x => x.Id == taskId);
        return task;
         
     }

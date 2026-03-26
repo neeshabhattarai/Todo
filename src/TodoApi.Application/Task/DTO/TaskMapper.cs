@@ -9,7 +9,7 @@ public class TaskMapper:Profile
     public TaskMapper()
     {
         CreateMap<CreateTask,Tasks>().ReverseMap();
-        CreateMap<Tasks,TaskDTO>().ReverseMap();
+        CreateMap<Tasks,TaskDTO>().ForMember(src=>src.UserName,x=>x.MapFrom(s=>s.User.Email)).ReverseMap();
         
     }
 }

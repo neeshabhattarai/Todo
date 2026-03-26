@@ -1,6 +1,6 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AMonitor_002ECoreCLR_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2025_002E3_003Fresharper_002Dhost_003FSourcesCache_003F8056cd3f452fefb9834f05cdb275b762dd41f27b7766cd71174e78592dc495b_003FMonitor_002ECoreCLR_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=70e75f16_002D4969_002D45a6_002Dbdcd_002De43d7c8ad674/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CreateTask_ShouldReturnTrue #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=70e75f16_002D4969_002D45a6_002Dbdcd_002De43d7c8ad674/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CreateTask_ShouldReturnTrue #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::8C0545D1-E62C-4D3B-91E6-E9F6CF1ECB26::net8.0::DefaultNamespace.CreateTaskValidatorTest.CreateTask_ShouldReturn_Valid&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::8C0545D1-E62C-4D3B-91E6-E9F6CF1ECB26::net8.0::DefaultNamespace.CreateTaskValidatorTest.CreateTask_ShouldReturn_Error&lt;/TestId&gt;
@@ -22,9 +22,10 @@
     &lt;TestId&gt;xUnit::8C0545D1-E62C-4D3B-91E6-E9F6CF1ECB26::net8.0::DefaultNamespace.CreateTaskValidatorTest.CreateTask_ShouldReturnTrue&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e8429c2c_002D31d5_002D48f2_002Daaa5_002Dd14b5e9aecfa/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CreateTask_ShouldReturnTrue #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e8429c2c_002D31d5_002D48f2_002Daaa5_002Dd14b5e9aecfa/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CreateTask_ShouldReturnTrue #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::8C0545D1-E62C-4D3B-91E6-E9F6CF1ECB26::net8.0::DefaultNamespace.CreateTaskValidatorTest.CreateTask_ShouldReturn_Valid&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::8C0545D1-E62C-4D3B-91E6-E9F6CF1ECB26::net8.0::TestProject1.Task.Command.DeleteTask.DeleteTaskValidationTest.DeleteTask_ReturnTrue&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::8C0545D1-E62C-4D3B-91E6-E9F6CF1ECB26::net8.0::TodoApi.Applicaiton.Test.Task.Command.CreateTask.CreateTaskHandlerTest.CreateTask_ShouldReturnCreatedTask&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
