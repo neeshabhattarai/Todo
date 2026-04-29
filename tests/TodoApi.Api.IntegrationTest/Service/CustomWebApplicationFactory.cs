@@ -20,7 +20,7 @@ public class CustomWebApplicationFactory<T>:WebApplicationFactory<T> where T:cla
                 services.Remove(descriptor);
             services.AddDbContext<TodoApplicationDbContext>(options =>
             {
-                options.UseNpgsql("Host=localhost;Username=postgres;Password=postgres;Database=BlogApplicationDbTest");
+                options.UseNpgsql("Host=localhost;Username=postgres;Password=admin;Database=BlogApplicationDbTest");
             });
             var sp = services.BuildServiceProvider();
             using var scope = sp.CreateScope();
